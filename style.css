@@ -1,0 +1,513 @@
+*{
+    padding:0;
+    margin:0;
+    border:0;
+    direction: rtl;
+}
+@font-face{
+    font-family: 'iran';
+    src: url('fonts/IRANSans.ttf') format('truetype');
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#main{
+    font-family: iran;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    float: right;
+}
+.nav-menu-top , .menu-down{
+    width: 100%;
+    height:50px;
+    background-color: #03A9F4;
+    float: right;
+}
+.nav-menu-top ul li{
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 50px;
+}
+.nav-menu-top ul li:hover{
+    background-color:#e7e7e7;
+    color: #313131;
+}
+.nav-menu-top ul li:hover a{
+   color: #313131;
+}
+.nav-menu-top li a:hover{
+    color: #313131;
+}
+.nav-menu-top ul li a{
+    color: #ffffff;
+}
+.nav-menu-right{
+    width:50%;
+    float: right;
+}
+.nav-menu-right ul li{
+    float: right;
+    padding: 0 15px;
+}
+.nav-menu-left{
+    width:50%;
+    float: left;
+}
+.icon-home{
+    width: 32px;
+    height: 32px;
+    display: block;
+    background: url("images/home.png");
+    position: relative;
+    top: 8px;
+}
+.nav-menu-left ul li{
+    float: left;
+    padding: 0 15px;
+}
+.nav-menu-left .icon-register , .icon-login{
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    position: relative;
+    top:8px;
+}
+.nav-menu-left .icon-register{
+    background: url("images/login-variant.png") no-repeat;
+}
+.nav-menu-left li:hover .icon-register{
+    background: url("images/login-variant t.png");
+}
+.nav-menu-left .icon-login{
+    background: url("images/img.png") -35px -1px no-repeat;
+}
+.nav-menu-left li:hover .icon-login{
+    background: url("images/img.png") -9px -1px no-repeat;
+}
+.i-search{
+    width: 200px;
+    height: 40px;
+    border: 2px solid #cccccc;
+    border-radius: 100px;
+    transition: width 1s;
+    padding: 0 5px;
+}
+.i-search:hover{
+    width:250px;
+}
+.search-box{
+    float: left;
+    line-height: 50px;
+    margin: 0 8px;
+}
+.small-logo{
+    float: right;
+    line-height: 50px;
+    margin: 0 8px;
+}
+.icon-cover{
+    float: right;
+    margin: 0 8px;
+}
+.icon-cover:hover .icon-home{
+    background: url("images/homee.png");
+}
+/******************************************HEADER *********************/
+.header{
+    width: 100%;
+    height: 160px;
+    float: right;
+}
+.header-right {
+    width: 70%;
+    float: right;
+}
+.header-right .logo{
+    width: 30%;
+    float: right;
+}
+.header-right img{
+    width: 100px;
+    height: 90px;
+    padding: 18px;
+}
+.title-header{
+    float: left;
+    position: relative;
+    top:50px;
+    margin-left: 80px;
+}
+.header-left{
+    width: 30%;
+    float: left;
+}
+.header-left .img-telegram{
+    width:300px;
+   margin: 30px 0;
+    float: left;
+}
+/***************************** MENU DOWN *******************/
+.nav-down ul {
+    width: 100%;
+    float: right;
+    height: 50px;
+}
+.nav-down ul li{
+    float: right;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 18px;
+    position: relative;
+    top:-4px;
+    z-index:99;
+}
+.nav-down ul li a{
+    color: #ffffff;
+}
+.nav-down >ul >li >a{
+    width: 100%;
+    height:100%;
+    padding: 10px;
+}
+.nav-down ul li ul{
+    width: 200px;
+    height: 35px;
+    position: absolute;
+    top:60px;
+    display: none;
+}
+.nav-down ul li:hover ul{
+    display: block;
+}
+.nav-down ul li ul li{
+    width: 100%;
+    background-color:#313131;
+    padding: 5px;
+    margin: 4px 0;
+    transition: background-color 1s;
+}
+.nav-down ul li ul li:hover{
+    background-color: #03A9F4;
+    border-radius: 5px;
+}
+.nav-down ul li ul li:before{
+    content: "";
+    width: 230px;
+    height: 40px;
+    position: absolute;
+    top:10px;
+}
+.nav-down ul li ul li ul{
+    position: absolute;
+    right: 220px;
+    top:0;
+    display: none !important;
+}
+.nav-down ul li ul li:hover ul{
+    display: block !important;
+}
+.nav-down ul li ul li ul li:before{
+    content: "";
+    height: 50px;
+    width: 250px;
+    position: absolute;
+    right: -20px;
+    top: 0;
+}
+/****************** End Menu Down  **********/
+.main-index{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    float: right;
+}
+.sidebar_right{
+    width: 20%;
+    height: auto;
+    float: right;
+}
+.container_sidebar{
+    width: 90%;
+    padding-right:15px;
+}
+.title_sidebar {
+    margin-bottom: 10px;
+}
+.category_box{
+    border: 1px solid #a1a1a1;
+    padding: 5px;
+}
+.category_box ul li{
+    margin: 3px 0;
+}
+.category_box .icon-plus{
+    width: 20px;
+    height:20px;
+    display: inline-block;
+    position: relative;
+    top:10px;
+    padding: 3px;
+    background: url("images/plus.png") no-repeat;
+}
+.content{
+    width: 60%;
+    height: auto;
+    float: right;
+}
+.slider{
+    width:700px;
+    height: 400px;
+    margin: 0 auto;
+    border:1px solid #cccccc;
+    box-shadow: 0 0 10px #111;
+    position: relative;
+    overflow: hidden;
+}
+.slider ul li {
+    display: none;
+}
+.slider ul li img{
+    width:700px;
+    height: 400px;
+}
+.slider .description-slider{
+    width: 98%;
+    height: 50px;
+    background-color: #000;
+    opacity: 0.7 ;
+    color: #ffffff;
+    position: absolute;
+    bottom:0;
+    line-height: 50px;
+    padding-right: 15px;
+}
+.slider .next , .prev{
+    width: 20px;
+    height: 33px;
+    display: inline-block;
+    position: absolute;
+    top: 207px;
+    z-index: 99;
+    background: url("images/img.png") no-repeat;
+}
+.slider .next{
+    right: 10px;
+    background-position: -11px -79px ;
+}
+.slider .prev{
+    left: 10px;
+    background-position: -9px -46px;
+}
+.sidebar_left{
+    width: 20%;
+    height: auto;
+    float: left;
+}
+.accident-post ul li img{
+    width: 70px;
+    height: 70px;
+    border:2px solid #a1a1a1;
+    border-radius: 100%;
+    transition: border-radius 1s;
+}
+.accident-post ul li img:hover{
+    border-radius: 5px;
+}
+.accident-post ul li a{
+    width: 60%;
+    height: 20px;
+    float: left;
+    position: relative;
+    top: 20px;
+    padding-right: 5px;
+    color: black;
+    font-size: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.accident-post ul li a:hover{
+    color: #03A9F4;
+}
+.sidebar-con {
+  margin-top: 30px;
+}
+.sidebar-con ul{
+  margin-top: 30px;
+}
+.sidebar-con ul li{
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    line-height: 45px;
+    font-size: 13px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.sidebar-con ul li a{
+    height: 100%;
+    float: right;
+    color: #000;
+    padding-right: 5px;
+}
+.sidebar-con ul li:hover{
+    background-color: #313131;
+    border-radius: 4px;
+}
+.sidebar-con ul li:hover a{
+    color: #ffffff;
+}
+/************************************ POST *******************/
+.posts{
+    width: 100%;
+    height: auto;
+    float: right;
+    margin: 20px 0;
+}
+.post-cover{
+    width: 32%;
+    height: 315px;
+    float: right;
+    margin: 10px 2px;
+    border:1px solid #eeeeee;
+    border-radius: 2px;
+    box-shadow: 2px 3px 3px #b1b1b1;
+    overflow: hidden;
+}
+.post-cover img{
+    width: 240px;
+    height: 240px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.post-title{
+    width: 92%;
+    overflow: hidden;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.post-title a{
+    color: #000;
+}
+.img-content{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.img-content:hover .layer{
+    display: block;
+}
+.layer{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    position: absolute;
+    opacity:0.8;
+    display: none;
+}
+.layer .title-layer{
+    width: 100%;
+    height: 45px;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 10px 10px;
+    overflow: hidden;
+}
+.layer .layer2{
+    width: 100px;
+    height: 100px;
+    background-color: #f13e86;
+    margin: 60px auto;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+    border-radius: 100%;
+
+    transition: 0.5s width, border-radius 0.5s;
+}
+.layer .layer2 a{
+    color: #ffffff;
+}
+.layer .layer2:hover{
+    width: 100%;
+    border-radius: 0;
+}
+/*************************  FOOTER **********************/
+footer.footer{
+    width: 100%;
+    height: auto;
+    background-color: #313131;
+    float: right;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.footer-right , .footer-left{
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+}
+.footer-right{
+    float: right;
+}
+.footer-left{
+    float: left;
+}
+.footer .title-footer{
+    width: 250px;
+    height: 40px;
+    background-color: #03A9F4;
+    border-radius: 36px 5px 36px 5px;
+    border: 2px solid #333;
+    text-align: center;
+    line-height: 40px;
+    color: #ececec;
+    margin:30px 20px;
+}
+.footer .box-footer{
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-right: 20px;
+}
+.box-footer .icon-footer{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 10px 3px;
+}
+.telegram-footer{
+    background: url("images/telegrammm.png") no-repeat;
+}
+.instagram-footer{
+    background: url("images/instagram.png") no-repeat;
+}
+.lenzor-footer{
+    background: url("images/lenzor.png") no-repeat;
+}
+.footer-text{
+    float: right;
+    width: 100%;
+    color: #cccccc;
+    font-size: 22px;
+    margin: 5px 20px;
+    padding: 20px;
+}
+.footer-text a{
+    color: #cccccc;
+}
+.footer-text .right{
+    float: right;
+}
+.footer-text .left{
+    float: left;
+    margin-left: 50px;
+}
